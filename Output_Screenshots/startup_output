@@ -1,0 +1,47 @@
+E-COMMERCE BACKEND SYSTEM
+=============================
+
+Starting Application...
+-------------------------
+[OK] Connected to Database: jdbc:h2:mem:ecommerce;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+[OK] Database Pool: HikariCP (10 connections)
+[OK] Flyway Migration: Applied 0 migrations
+[OK] JPA Entities: 6 entities scanned
+[OK] Cache: Spring Cache (in-memory)
+
+DATABASE STATISTICS:
+-----------------------
+- Users: 50 records
+- Products: 150 records
+- Categories: 12 records
+- Orders: 85 records
+- Order Items: 320 records
+- Payments: 85 records
+
+AVAILABLE ENDPOINTS:
+-------------------
+Product Management:
+  GET    /api/products              - List products (filterable)
+  GET    /api/products/{id}         - Get product details
+  POST   /api/products              - Add new product
+  PUT    /api/products/{id}         - Update product
+  DELETE /api/products/{id}         - Delete product
+
+Order Management:
+  GET    /api/orders                - Get user orders
+  POST   /api/orders                - Create new order
+  GET    /api/orders/{id}           - Get order details
+  PUT    /api/orders/{id}/cancel    - Cancel order
+  GET    /api/orders/report/daily   - Daily sales report
+
+User Management:
+  POST   /api/auth/register         - Register new user
+  POST   /api/auth/login            - User login
+  GET    /api/users/profile         - Get profile
+  PUT    /api/users/profile         - Update profile
+
+Admin Management:
+  GET    /api/admin/orders          - View all orders
+  PUT    /api/admin/orders/{id}/status - Approve/update order
+  GET    /api/admin/dashboard       - Admin analytics
+  

@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "id": 3,
+      "orderNumber": "SEED-ORD-3",
+      "totalAmount": 376,
+      "status": "SHIPPED",
+      "createdAt": "2026-02-23T13:06:21.879386"
+    },
+    {
+      "id": 52,
+      "orderNumber": "SEED-ORD-52",
+      "totalAmount": 338,
+      "status": "CONFIRMED",
+      "createdAt": "2026-02-23T13:06:22.069784"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageSize": 20,
+    "pageNumber": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 2,
+  "totalPages": 1,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "numberOfElements": 2,
+  "first": true,
+  "size": 20,
+  "empty": false
+}
